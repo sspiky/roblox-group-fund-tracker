@@ -4,7 +4,7 @@ adds up the robux in your groups and sends a discord embed to a desired channel 
 uses requests bc idc about saving an extra 4 ms
 
 made this for my friend for usage @ .gg/flop
-## Example image
+## Example
 ![alt text](https://i.imgur.com/UMBZlDm.png)
 
 ## Requirements
