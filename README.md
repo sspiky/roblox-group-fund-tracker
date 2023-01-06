@@ -12,6 +12,7 @@ made this for my friend for usage @ .gg/flop, useful if you sell robux via group
 - discord.py
 
 ## Usage
+i cant be bothered to make a config file :D
 - put your group ids in the groups list
 - place a valid .ROBLOSECURITY in the headers after `.ROBLOSECURITY=`
 - put your bot token in the `bot.run()` at the bottom
