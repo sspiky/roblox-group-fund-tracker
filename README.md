@@ -16,3 +16,5 @@ made this for my friend for usage @ .gg/flop
 - change channel id on the `bot.get_channel(123456789123456789)` line
 - change footer of embed or remove it completely if you want
 - change sleep time if you want - default is `1 hour / 3600 seconds`
+
+could make these slightly easier to input but whatever
