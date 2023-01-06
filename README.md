@@ -5,6 +5,9 @@ uses requests bc idc about saving an extra 4 ms
 
 made this for my friend for usage @ .gg/flop
 
+## Requirements
+- requests
+- discord.py
 
 ## Usage
 - put your group ids in the groups list
