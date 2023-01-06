@@ -1,10 +1,11 @@
 # roblox group fund tracker
-adds up the robux in your groups and sends a discord embed to a desired channel, useful if you sell robux via group funds or whatever
+adds up the robux in your groups and sends a discord embed to a desired channel every hour, useful if you sell robux via group funds or whatever
 
 uses requests bc idc about saving an extra 4 ms
 
 made this for my friend for usage @ .gg/flop
 
+![alt text](https://i.imgur.com/UMBZlDm.png)
 ## Requirements
 - requests
 - discord.py
