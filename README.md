@@ -16,4 +16,4 @@ i cant be bothered to make a config file :D
 - put your group ids in the groups list
 - place a valid .ROBLOSECURITY in the headers after `.ROBLOSECURITY=`
 - put your bot token in the `bot.run()` at the bottom
-- change channel id on the `bot.get_channel(123456789123456789)` line
+- change channel id in the `bot.get_channel(123456789123456789)` line
