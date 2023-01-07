@@ -20,14 +20,16 @@ async def fetch():
     global total, r
     r = []
     total = 0
+    
     for i in groups:
         try:
-            response = requests.get(f'https://economy.roblox.com/v1/groups/{i}/currency', headers=headers)
-            nameresponse = requests.get(f'https://groups.roblox.com/v2/groups?groupIds={i}')
-            name = nameresponse.json()["data"][0]["name"]
-            robux = response.json()["robux"]
+            res = requests.get(f'https://economy.roblox.com/v1/groups/{i}/currency', headers=headers)
+            nres = requests.get(f'https://groups.roblox.com/v2/groups?groupIds={i}')
+            name = nres.json()["data"][0]["name"]
+            robux = res.json()["robux"]
             r.append(f"`{robux:,}` | **{name}**")
             total += robux
+            
         except Exception:
             await asyncio.sleep(3)
             continue
