@@ -10,7 +10,6 @@ headers = {"cookie":".ROBLOSECURITY=_|WARNING:-DO-NOT-SHARE-THIS.--Sharing-this-
 
 @bot.event
 async def on_ready():
-    print("ready")
     while True:
             await fetch()
             await send_embed()
