@@ -35,7 +35,9 @@ async def fetch():
 
 async def send_embed():
     global total, r
-    embed = discord.Embed(title=f":money_with_wings: `{total:,}` R$ in stock", description="**Groups:**\n{r}".format(r='\n'.join(r)), timestamp=datetime.utcnow())
+    embed = discord.Embed(title=f":money_with_wings: `{total:,}` R$ in stock",
+                          description="**Groups:**\n{r}".format(r='\n'.join(r)),
+                          timestamp=datetime.utcnow())
     channel = bot.get_channel(123456789123456789)
     await channel.send(embed=embed, delete_after=3600)
 
