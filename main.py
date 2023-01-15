@@ -6,7 +6,7 @@ import discord
 bot = discord.Client(intents=discord.Intents.all())
 
 groups = ['111111111','22222222','1333333337','444444444','5555555']
-headers = {"cookie":".ROBLOSECURITY=_|WARNING:-DO-NOT-SHARE-THIS.--Sharing-this-will-allow-someone-to-log-in-as-you-and-to-steal-your-ROBUX-and-items.|_asdfasfbasgfhjasahjsafavjcvbzvz"}
+headers = {"cookie":".ROBLOSECURITY=put roblosecurity with the warning here"}
 token = 'put bot token here'
 channelid = 12345678987654321
 
