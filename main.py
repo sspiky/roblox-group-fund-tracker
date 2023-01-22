@@ -25,16 +25,20 @@ async def fetch():
     for i in groups:
         res = requests.get(f'https://economy.roblox.com/v1/groups/{i}/currency', headers=headers)
         nres = requests.get(f'https://groups.roblox.com/v2/groups?groupIds={i}')
+        
         name = nres.json()["data"][0]["name"]
         robux = res.json()["robux"]
+        
         r.append(f"`{robux:,}` | **{name}**")
         total += robux
 
 async def send_embed():
     global total, r
+    
     embed = discord.Embed(title=f":money_with_wings: `{total:,}` R$ in stock",
                           description="**Groups:**\n{r}".format(r='\n'.join(r)),
                           timestamp=datetime.utcnow())
+    
     channel = bot.get_channel(channelid)
     await channel.send(embed=embed, delete_after=3600)
 
